@@ -1,0 +1,44 @@
+/* ===== HEADER CONTAINER ===== */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #1C1F2E; /* Adjusted to fit theme */
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* ===== HEADER OPTIONS ===== */
+.header-options {
+    margin: 0 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.header-options:hover {
+    color: #57A992;
+    transform: scale(1.1);
+}
+
+/* ===== FADE OUT WHEN SCROLLING DOWN ===== */
+.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+/* ===== FADE IN WHEN SCROLLING UP ===== */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
